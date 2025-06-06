@@ -4,7 +4,7 @@ help:
 	@echo Run 'env PCLOUD_USERNAME="<pcloud_user>" PCLOUD_SECRET=<secret> make test' to run a basic functionality test
 
 PLATFORM := linux/arm64
-REPOSITORY := jloyola/pcloudcc
+REPOSITORY := kirre-bylund/pcloudcc
 LABEL := dev
 IMAGE_NAME := $(REPOSITORY):$(LABEL)
 

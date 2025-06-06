@@ -1,8 +1,8 @@
 # pcloudcc_docker
 <p>
-<a href="https://github.com/jlloyola/pcloudcc_docker/actions"><img alt="Actions Status" src="https://github.com/jlloyola/pcloudcc_docker/actions/workflows/docker-image.yml/badge.svg"></a>
+<a href="https://github.com/kirre-bylund/pcloudcc_docker/actions"><img alt="Actions Status" src="https://github.com/kirre-bylund/pcloudcc_docker/actions/workflows/docker-image.yml/badge.svg"></a>
 <a href="https://hub.docker.com/r/jloyola/pcloudcc"><img alt="Docker pulls" src="https://img.shields.io/docker/pulls/jloyola/pcloudcc"></a>
-<a href="https://github.com/jlloyola/pcloudcc_docker/blob/main/LICENSE"><img alt="License: GPL-3.0" src="https://img.shields.io/github/license/jlloyola/pcloudcc_docker"></a>
+<a href="https://github.com/kirre-bylund/pcloudcc_docker/blob/main/LICENSE"><img alt="License: GPL-3.0" src="https://img.shields.io/github/license/kirre-bylund/pcloudcc_docker"></a>
 </p>
 
 This repo defines a Dockerfile to build the
@@ -11,9 +11,7 @@ from source and run it inside a container.
 
 The container exposes your pcloud drive in a location of your
 choice. It runs using non-root `uid`:`gid` to properly handle
-file permissions and allow seamless file transfers between the host, the container, and pcloud.  
-This image includes PR [#163](https://github.com/pcloudcom/console-client/pull/163)
-to enable one-time password multi-factor authentication.
+file permissions and allow seamless file transfers between the host, the container, and pcloud.
 
 ## Setup instructions
 It is recommended to use a compose file to simplify setup.  
@@ -59,7 +57,7 @@ folder will be given 'root' permissions, which then causes the Docker container 
 ROOT level privileges prohibited!
 ```
 ### 4. Initial run
-Copy the [compose.yml](https://github.com/jlloyola/pcloudcc_docker/blob/main/compose.yml)
+Copy the [compose.yml](https://github.com/kirre-bylund/pcloudcc_docker/blob/main/compose.yml)
 file from this repo and place it in the same location as
 your `.env` file
 You will need to login the initial run.
@@ -97,5 +95,6 @@ Run the following command to fix it
 See https://stackoverflow.com/a/25986155
 ## Acknowledgments
 The code in this repo was inspired by the work from:
+* jlloyola: https://github.com/jlloyola/pcloudcc_docker
 * zcalusic: https://github.com/zcalusic/dockerfiles/tree/master/pcloud
 * abraunegg: https://github.com/abraunegg/onedrive
